@@ -1,57 +1,55 @@
 :host {
-    font-size: 30px;
-    .image-continente {
-        height: 100vh;
-        width: 100vw;
-        background-image: url('../../assets/lumea.png');
-    }
+  font-size: 30px;
+  .image-continente {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../assets/lumea.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 98%;
 
-    .europa {
-        position: absolute;
-        top: 100px;
-        left: 777px;
+    > span.continent {
+      cursor: pointer;
+      position: absolute;
     }
+  }
 
-    .americaNord {
-        position: absolute;
-        top: 180px;
-        left: 240px;
+  .europa {
+    top: 130px;
+    right: 800px;
+  }
+
+  .americaNord {
+    top: 180px;
+    left: 340px;
+  }
+  .australia {
+    top: 530px;
+    right: 250px;
+  }
+  .antarctida {
+    bottom: 40px;
+    left: 900px;
+  }
+  .polulNord {
+    top: 5px;
+    left: 850px;
+
+    &:hover {
+      left: 830px;
+      font-size: 40px;
     }
-    .australia {
-        position: absolute;
-        top: 450px;
-        left: 1200px;
-    }
-    .antarctida {
-        position: absolute;
-        bottom: 25px;
-        left: 750px;
-    }
-    .polulNord {
-        position: absolute;
-        top: 10px;
-        left: 650px;
-    }
-    .polulNord:hover {
-        position: absolute;
-        top: 10px;
-        left: 630px;
-        font-size: 40px;
-    }
-    .asia {
-        position: absolute;
-        top: 170px;
-        left: 1000px;
-    }
-    .americaSud {
-        position: absolute;
-        top: 430px;
-        left: 380px;
-    }
-    .africa {
-        position: absolute;
-        top: 300px;
-        left: 750px;
-    }
-    
+  }
+  .asia {
+    top: 170px;
+    right: 500px;
+  }
+  .americaSud {
+    top: 480px;
+    left: 500px;
+  }
+  .africa {
+    top: 300px;
+    left: 950px;
+  }
 }
