@@ -1,0 +1,45 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ContinenteleComponent } from './continentele/continentele.component';
+import { EuropaComponent } from './europa/europa.component';
+import { AfricaComponent } from './africa/africa.component';
+import { AsiaComponent } from './asia/asia.component';
+import { AustraliaComponent } from './australia/australia.component';
+import { PolulNordComponent } from './polul-nord/polul-nord.component';
+import { AntarctidaComponent } from './antarctida/antarctida.component';
+import { AmercaDeSudComponent } from './amerca-de-sud/amerca-de-sud.component';
+import { AmercaDeNordComponent } from './amerca-de-nord/amerca-de-nord.component';
+import { EducativCardComponent } from './educativ-card/educativ-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule, MatButtonModule } from '@angular/material';
+import { AustraliaFloraComponent } from './australia-flora/australia-flora.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ContinenteleComponent,
+    EuropaComponent,
+    AfricaComponent,
+    AsiaComponent,
+    AustraliaComponent,
+    PolulNordComponent,
+    AntarctidaComponent,
+    AmercaDeSudComponent,
+    AmercaDeNordComponent,
+    EducativCardComponent,
+    AustraliaFloraComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

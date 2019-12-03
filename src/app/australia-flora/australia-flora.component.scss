@@ -1,0 +1,24 @@
+:host {
+    .content {
+        background-color: slategray;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 400px;
+            height: 50vh;
+        }
+    }
+    .button {
+        position: fixed;
+        right: 15px;
+        top: 50%;
+        .arrow {
+
+            font-size: 50px;
+        }
+    }
+}
