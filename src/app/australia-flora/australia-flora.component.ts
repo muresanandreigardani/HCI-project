@@ -6,6 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./australia-flora.component.scss']
 })
 export class AustraliaFloraComponent {
+  public sound = new Audio();
+
+  ngAfterViewInit() {
+    this.sound.src = '../../assets/australia/flora.mp3';
+    this.sound.load();
+    this.sound.play();
+  }
+
+  ngOnDestroy() {
+    this.sound.pause();
+  }
 
   public playSound($event) {
     const sound = new Audio();

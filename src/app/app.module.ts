@@ -16,6 +16,11 @@ import { EducativCardComponent } from './educativ-card/educativ-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule, MatButtonModule } from '@angular/material';
 import { AustraliaFloraComponent } from './australia-flora/australia-flora.component';
+import { JocNumarareAustraliaComponent } from './joc-numarare-australia/joc-numarare-australia.component';
+import { AsiaFaunaComponent } from './asia-fauna/asia-fauna.component';
+import { AsiaJocComponent } from './asia-joc/asia-joc.component';
+import { AfricaJocComponent } from './africa-joc/africa-joc.component';
+import { EuropaJocComponent } from './europa-joc/europa-joc.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { AustraliaFloraComponent } from './australia-flora/australia-flora.compo
     AmercaDeSudComponent,
     AmercaDeNordComponent,
     EducativCardComponent,
-    AustraliaFloraComponent
+    AustraliaFloraComponent,
+    JocNumarareAustraliaComponent,
+    AsiaFaunaComponent,
+    AsiaJocComponent,
+    AfricaJocComponent,
+    EuropaJocComponent
   ],
   imports: [
     BrowserModule,

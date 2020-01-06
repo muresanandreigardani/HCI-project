@@ -10,6 +10,11 @@ import { PolulNordComponent } from './polul-nord/polul-nord.component';
 import { AntarctidaComponent } from './antarctida/antarctida.component';
 import { AustraliaComponent } from './australia/australia.component';
 import { AustraliaFloraComponent } from './australia-flora/australia-flora.component';
+import { JocNumarareAustraliaComponent } from './joc-numarare-australia/joc-numarare-australia.component';
+import { AsiaFaunaComponent } from './asia-fauna/asia-fauna.component';
+import { AsiaJocComponent } from './asia-joc/asia-joc.component';
+import { AfricaJocComponent } from './africa-joc/africa-joc.component';
+import { EuropaJocComponent } from './europa-joc/europa-joc.component';
 
 
 const routes: Routes = [
@@ -52,6 +57,26 @@ const routes: Routes = [
   {
     path: 'australia/flora',
     component: AustraliaFloraComponent
+  },
+  {
+    path: 'australia/joc',
+    component: JocNumarareAustraliaComponent
+  },
+  {
+    path: 'asia/fauna',
+    component: AsiaFaunaComponent
+  },
+  {
+    path: 'asia/joc',
+    component: AsiaJocComponent
+  },
+  {
+    path: 'africa/joc',
+    component: AfricaJocComponent
+  },
+  {
+    path: 'europa/joc',
+    component: EuropaJocComponent
   }
 ];
 

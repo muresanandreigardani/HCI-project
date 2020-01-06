@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './africa.component.html',
   styleUrls: ['./africa.component.scss']
 })
-export class AfricaComponent implements OnInit {
+export class AfricaComponent {
 
-  constructor() { }
+  public sound = new Audio();
+  ngAfterViewInit() {
+    this.sound = new Audio();
+    this.sound.src = '../../assets/africa/introducere.mp3';
+    this.sound.load();
+    this.sound.play();
+  }
 
-  ngOnInit() {
+  ngOnDestroy() {
+    this.sound.pause();
   }
 
 }
