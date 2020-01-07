@@ -21,6 +21,8 @@ import { AsiaFaunaComponent } from './asia-fauna/asia-fauna.component';
 import { AsiaJocComponent } from './asia-joc/asia-joc.component';
 import { AfricaJocComponent } from './africa-joc/africa-joc.component';
 import { EuropaJocComponent } from './europa-joc/europa-joc.component';
+import { AmericaSudCuriozitatiComponent } from './america-sud-curiozitati/america-sud-curiozitati.component';
+import { AmericaNordCuriozitatiComponent } from './america-nord-curiozitati/america-nord-curiozitati.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { EuropaJocComponent } from './europa-joc/europa-joc.component';
     AsiaFaunaComponent,
     AsiaJocComponent,
     AfricaJocComponent,
-    EuropaJocComponent
+    EuropaJocComponent,
+    AmericaSudCuriozitatiComponent,
+    AmericaNordCuriozitatiComponent
   ],
   imports: [
     BrowserModule,

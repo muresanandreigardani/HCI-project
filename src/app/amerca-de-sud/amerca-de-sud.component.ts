@@ -12,4 +12,16 @@ export class AmercaDeSudComponent implements OnInit {
   ngOnInit() {
   }
 
+  public sound = new Audio();
+  ngAfterViewInit() {
+    this.sound = new Audio();
+    this.sound.src = '../../assets/americaSud/intro.mp3';
+    this.sound.load();
+    this.sound.play();
+  }
+
+  ngOnDestroy() {
+    this.sound.pause();
+  }
+
 }
