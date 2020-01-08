@@ -16,7 +16,7 @@
 
   .europa {
     top: 130px;
-    right: 800px;
+    right: 700px;
   }
 
   .americaNord {
@@ -24,19 +24,19 @@
     left: 340px;
   }
   .australia {
-    top: 530px;
-    right: 250px;
+    top: 480px;
+    right: 200px;
   }
   .antarctida {
     bottom: 40px;
-    left: 900px;
+    left: 650px;
   }
   .polulNord {
     top: 5px;
-    left: 850px;
+    left: 650px;
 
     &:hover {
-      left: 830px;
+      left: 630px;
       font-size: 40px;
     }
   }
@@ -50,6 +50,6 @@
   }
   .africa {
     top: 300px;
-    left: 950px;
+    left: 750px;
   }
 }

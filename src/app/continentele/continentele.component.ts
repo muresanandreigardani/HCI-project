@@ -8,7 +8,17 @@ import { Router } from '@angular/router';
 })
 export class ContinenteleComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
+
+  ngAfterViewInit() {
+    // const sound = new Audio();
+    // sound.src = '../../assets/introducereContinente.mp3';
+    // sound.load();
+    // sound.play();
+  }
+
+
 
   public australiaHover($event) {
     if ($event === 'enter') {

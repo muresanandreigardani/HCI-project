@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './asia.component.html',
   styleUrls: ['./asia.component.scss']
 })
-export class AsiaComponent implements OnInit {
+export class AsiaComponent {
+  public sound = new Audio();
+  ngAfterViewInit() {
+    this.sound = new Audio();
+    this.sound.src = '../../assets/asia/flora.mp3';
+    this.sound.load();
+    this.sound.play();
+  }
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnDestroy() {
+    this.sound.pause();
   }
 
 }
