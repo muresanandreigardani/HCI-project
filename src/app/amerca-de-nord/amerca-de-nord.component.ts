@@ -15,7 +15,7 @@ export class AmercaDeNordComponent implements OnInit {
   public sound = new Audio();
   ngAfterViewInit() {
     this.sound = new Audio();
-    this.sound.src = '../../assets/americaNord/intro.mp3';
+    this.sound.src = 'assets/americaNord/intro.mp3';
     this.sound.load();
     this.sound.play();
   }

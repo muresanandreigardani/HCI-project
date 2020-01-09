@@ -12,7 +12,7 @@ export class AsiaJocComponent {
   constructor(private navCtrl: Router) { }
 
   ngAfterViewInit() {
-    this.sound2.src = '../../assets/asia/introducere.mp3';
+    this.sound2.src = 'assets/asia/introducere.mp3';
     this.sound2.load();
     this.sound2.play();
   }
@@ -20,7 +20,7 @@ export class AsiaJocComponent {
 
   public choose(val) {
     if (val === 1) {
-      this.sound.src = '../../assets/asia/felicitari.mp3';
+      this.sound.src = 'assets/asia/felicitari.mp3';
       this.sound.load();
       this.sound.play();
       this.sound2.pause();
@@ -30,7 +30,7 @@ export class AsiaJocComponent {
       }, 4000);
     }
     else {
-      this.sound.src = '../../assets/asia/gresit.mp3';
+      this.sound.src = 'assets/asia/gresit.mp3';
       this.sound.load();
       this.sound.play();
     }

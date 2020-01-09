@@ -14,7 +14,7 @@ export class EuropaComponent implements OnInit {
   public sound = new Audio();
   ngAfterViewInit() {
     this.sound = new Audio();
-    this.sound.src = '../../assets/europa/introducere.mp3';
+    this.sound.src = 'assets/europa/introducere.mp3';
     this.sound.load();
     this.sound.play();
   }

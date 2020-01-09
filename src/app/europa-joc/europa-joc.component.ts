@@ -16,7 +16,7 @@ export class EuropaJocComponent implements OnInit {
   constructor(private navCtrl: Router) { }
 
   ngAfterViewInit() {
-    this.sound2.src = '../../assets/europa/joc.mp3';
+    this.sound2.src = 'assets/europa/joc.mp3';
     this.sound2.load();
     this.sound2.play();
   }
@@ -24,7 +24,7 @@ export class EuropaJocComponent implements OnInit {
 
   public choose(val) {
     if (val === 1) {
-      this.sound.src = '../../assets/europa/felicitari.mp3';
+      this.sound.src = 'assets/europa/felicitari.mp3';
       this.sound.load();
       this.sound.play();
       this.sound2.pause();
@@ -34,7 +34,7 @@ export class EuropaJocComponent implements OnInit {
       }, 4500);
     }
     else {
-      this.sound.src = '../../assets/asia/gresit.mp3';
+      this.sound.src = 'assets/asia/gresit.mp3';
       this.sound.load();
       this.sound.play();
     }

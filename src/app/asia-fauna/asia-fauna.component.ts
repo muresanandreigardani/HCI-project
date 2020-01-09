@@ -9,7 +9,7 @@ export class AsiaFaunaComponent {
   public sound = new Audio();
   ngAfterViewInit() {
     this.sound = new Audio();
-    this.sound.src = '../../assets/asia/fauna.mp3';
+    this.sound.src = 'assets/asia/fauna.mp3';
     this.sound.load();
     this.sound.play();
   }

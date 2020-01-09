@@ -10,7 +10,7 @@ export class AfricaComponent {
   public sound = new Audio();
   ngAfterViewInit() {
     this.sound = new Audio();
-    this.sound.src = '../../assets/africa/introducere.mp3';
+    this.sound.src = 'assets/africa/introducere.mp3';
     this.sound.load();
     this.sound.play();
   }

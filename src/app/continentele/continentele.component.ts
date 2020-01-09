@@ -13,7 +13,7 @@ export class ContinenteleComponent {
 
   ngAfterViewInit() {
     // const sound = new Audio();
-    // sound.src = '../../assets/introducereContinente.mp3';
+    // sound.src = 'introducereContinente.mp3';
     // sound.load();
     // sound.play();
   }
@@ -23,77 +23,77 @@ export class ContinenteleComponent {
   public australiaHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/australia.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/australia.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public africaHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/africa.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/africa.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public americaSudHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/americaSud.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/americaSud.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public americaNordHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/americaNord.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/americaNord.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public europaHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/europa.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/europa.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public asiaHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/asia.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/asia.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }
   public antarctidaHover($event) {
     if ($event === 'enter') {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/antartica.jpg');");
+      africa.setAttribute("style", "background-image: url('assets/antartica.jpg');");
     }
     else {
       const africa = document.getElementsByClassName("image-continente")[0];
-      africa.setAttribute("style", "background-image: url('../../assets/lumea.png');");
+      africa.setAttribute("style", "background-image: url('assets/lumea.png');");
 
     }
   }

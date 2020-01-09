@@ -13,7 +13,7 @@ export class AfricaJocComponent {
   constructor(private navCtrl: Router) { }
 
   ngAfterViewInit() {
-    this.sound2.src = '../../assets/africa/joc.mp3';
+    this.sound2.src = 'assets/africa/joc.mp3';
     this.sound2.load();
     this.sound2.play();
   }
@@ -21,7 +21,7 @@ export class AfricaJocComponent {
 
   public choose(val) {
     if (val === 1) {
-      this.sound.src = '../../assets/africa/felicitari.mp3';
+      this.sound.src = 'assets/africa/felicitari.mp3';
       this.sound.load();
       this.sound.play();
       this.sound2.pause();
@@ -31,7 +31,7 @@ export class AfricaJocComponent {
       }, 1000);
     }
     else {
-      this.sound.src = '../../assets/asia/gresit.mp3';
+      this.sound.src = 'assets/asia/gresit.mp3';
       this.sound.load();
       this.sound.play();
     }

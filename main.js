@@ -5,12 +5,13 @@ let win;
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 600,
-    height: 670,
-    icon: `file://${__dirname}/dist/HciProject/assets/lumea.png`
+    width: 1920,
+    height: 1080,
+    maximized: true,
+    icon: `file://${__dirname}/dist/assets/lumea.png`
   })
 
-  win.loadURL(`file://${__dirname}/dist/HciProject/index.html`)
+  win.loadURL(`file://${__dirname}/dist/index.html`)
 
   // uncomment below to open the DevTools.
   // win.webContents.openDevTools()

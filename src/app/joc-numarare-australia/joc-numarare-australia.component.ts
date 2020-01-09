@@ -12,7 +12,7 @@ export class JocNumarareAustraliaComponent {
   constructor(private navCtrl: Router) { }
 
   ngAfterViewInit() {
-    this.sound2.src = '../../assets/jocNumarare/introducere.mp3';
+    this.sound2.src = 'assets/jocNumarare/introducere.mp3';
     this.sound2.load();
     this.sound2.play();
   }
@@ -20,7 +20,7 @@ export class JocNumarareAustraliaComponent {
 
   public choose(val) {
     if (val === 3) {
-      this.sound.src = '../../assets/jocNumarare/felicitari.mp3';
+      this.sound.src = 'assets/jocNumarare/felicitari.mp3';
       this.sound.load();
       this.sound.play();
       this.sound2.pause();
@@ -30,7 +30,7 @@ export class JocNumarareAustraliaComponent {
       }, 3000);
     }
     else {
-      this.sound.src = '../../assets/jocNumarare/gresit.mp3';
+      this.sound.src = 'assets/jocNumarare/gresit.mp3';
       this.sound.load();
       this.sound.play();
     }
