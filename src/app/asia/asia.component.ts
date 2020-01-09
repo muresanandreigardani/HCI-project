@@ -11,7 +11,9 @@ export class AsiaComponent {
     this.sound = new Audio();
     this.sound.src = 'assets/asia/flora.mp3';
     this.sound.load();
-    this.sound.play();
+    setTimeout(() => {
+      this.sound.play();
+    }, 500);
   }
 
   ngOnDestroy() {

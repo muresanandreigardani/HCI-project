@@ -11,7 +11,9 @@ export class AustraliaComponent {
     this.sound = new Audio();
     this.sound.src = 'assets/australia/animale.mp3';
     this.sound.load();
-    this.sound.play();
+    setTimeout(() => {
+      this.sound.play();
+    }, 500);
   }
 
   ngOnDestroy() {

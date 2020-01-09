@@ -11,7 +11,9 @@ export class AustraliaFloraComponent {
   ngAfterViewInit() {
     this.sound.src = 'assets/australia/flora.mp3';
     this.sound.load();
-    this.sound.play();
+    setTimeout(() => {
+      this.sound.play();
+    }, 500);
   }
 
   ngOnDestroy() {

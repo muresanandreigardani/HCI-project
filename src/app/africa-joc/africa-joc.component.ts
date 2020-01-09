@@ -15,25 +15,31 @@ export class AfricaJocComponent {
   ngAfterViewInit() {
     this.sound2.src = 'assets/africa/joc.mp3';
     this.sound2.load();
-    this.sound2.play();
+    setTimeout(() => {
+      this.sound2.play();
+    }, 500);
   }
 
 
   public choose(val) {
+    this.sound2.pause();
     if (val === 1) {
       this.sound.src = 'assets/africa/felicitari.mp3';
       this.sound.load();
-      this.sound.play();
-      this.sound2.pause();
+      setTimeout(() => {
+        this.sound.play();
+      }, 500);
       setTimeout(() => {
         this.sound.pause();
         this.navCtrl.navigate(['/']);
-      }, 1000);
+      }, 2500);
     }
     else {
       this.sound.src = 'assets/asia/gresit.mp3';
       this.sound.load();
-      this.sound.play();
+      setTimeout(() => {
+        this.sound.play();
+      }, 200);
     }
   }
 

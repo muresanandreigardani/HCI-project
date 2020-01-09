@@ -12,7 +12,9 @@ export class AfricaComponent {
     this.sound = new Audio();
     this.sound.src = 'assets/africa/introducere.mp3';
     this.sound.load();
-    this.sound.play();
+    setTimeout(() => {
+      this.sound.play();
+    }, 500);
   }
 
   ngOnDestroy() {

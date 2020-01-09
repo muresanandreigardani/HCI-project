@@ -14,25 +14,33 @@ export class JocNumarareAustraliaComponent {
   ngAfterViewInit() {
     this.sound2.src = 'assets/jocNumarare/introducere.mp3';
     this.sound2.load();
-    this.sound2.play();
+
+    setTimeout(() => {
+      this.sound2.play();
+    }, 500);
   }
 
 
   public choose(val) {
+    this.sound2.pause();
+
     if (val === 3) {
       this.sound.src = 'assets/jocNumarare/felicitari.mp3';
       this.sound.load();
-      this.sound.play();
-      this.sound2.pause();
+
+      setTimeout(() => {
+        this.sound.play();
+      }, 500);
       setTimeout(() => {
         this.sound.pause();
         this.navCtrl.navigate(['/']);
-      }, 3000);
-    }
-    else {
+      }, 4000);
+    } else {
       this.sound.src = 'assets/jocNumarare/gresit.mp3';
       this.sound.load();
-      this.sound.play();
+      setTimeout(() => {
+        this.sound.play();
+      }, 200);
     }
   }
 
